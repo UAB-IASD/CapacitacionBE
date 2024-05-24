@@ -1,0 +1,16 @@
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\bin\Debug\net6.0\AppHub.Application.deps.json
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\bin\Debug\net6.0\AppHub.Application.dll
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\bin\Debug\net6.0\AppHub.Application.pdb
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\bin\Debug\net6.0\AppHub.Domain.dll
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\bin\Debug\net6.0\AppHub.Domain.pdb
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\obj\Debug\net6.0\AppHub.Application.csproj.AssemblyReference.cache
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\obj\Debug\net6.0\AppHub.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\obj\Debug\net6.0\AppHub.Application.AssemblyInfoInputs.cache
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\obj\Debug\net6.0\AppHub.Application.AssemblyInfo.cs
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\obj\Debug\net6.0\AppHub.Application.csproj.CoreCompileInputs.cache
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\obj\Debug\net6.0\AppHub.Application.sourcelink.json
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\obj\Debug\net6.0\AppHub.A.790A4BB1.Up2Date
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\obj\Debug\net6.0\AppHub.Application.dll
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\obj\Debug\net6.0\refint\AppHub.Application.dll
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\obj\Debug\net6.0\AppHub.Application.pdb
+C:\Projects\CapacitacionBE\AppHub\AppHub.Application\obj\Debug\net6.0\ref\AppHub.Application.dll

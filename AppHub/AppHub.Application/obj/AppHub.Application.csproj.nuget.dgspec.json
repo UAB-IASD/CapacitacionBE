@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyectos_UAB\\AppHub\\AppHub.Application\\AppHub.Application.csproj": {}
+    "C:\\Projects\\CapacitacionBE\\AppHub\\AppHub.Application\\AppHub.Application.csproj": {}
   },
   "projects": {
-    "D:\\Proyectos_UAB\\AppHub\\AppHub.Application\\AppHub.Application.csproj": {
+    "C:\\Projects\\CapacitacionBE\\AppHub\\AppHub.Application\\AppHub.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos_UAB\\AppHub\\AppHub.Application\\AppHub.Application.csproj",
+        "projectUniqueName": "C:\\Projects\\CapacitacionBE\\AppHub\\AppHub.Application\\AppHub.Application.csproj",
         "projectName": "AppHub.Application",
-        "projectPath": "D:\\Proyectos_UAB\\AppHub\\AppHub.Application\\AppHub.Application.csproj",
-        "packagesPath": "C:\\Users\\Mario\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos_UAB\\AppHub\\AppHub.Application\\obj\\",
+        "projectPath": "C:\\Projects\\CapacitacionBE\\AppHub\\AppHub.Application\\AppHub.Application.csproj",
+        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\CapacitacionBE\\AppHub\\AppHub.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Proyectos_UAB\\AppHub\\AppHub.Domain\\AppHub.Domain.csproj": {
-                "projectPath": "D:\\Proyectos_UAB\\AppHub\\AppHub.Domain\\AppHub.Domain.csproj"
+              "C:\\Projects\\CapacitacionBE\\AppHub\\AppHub.Domain\\AppHub.Domain.csproj": {
+                "projectPath": "C:\\Projects\\CapacitacionBE\\AppHub\\AppHub.Domain\\AppHub.Domain.csproj"
               }
             }
           }
@@ -42,6 +43,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -63,24 +69,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Proyectos_UAB\\AppHub\\AppHub.Domain\\AppHub.Domain.csproj": {
+    "C:\\Projects\\CapacitacionBE\\AppHub\\AppHub.Domain\\AppHub.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos_UAB\\AppHub\\AppHub.Domain\\AppHub.Domain.csproj",
+        "projectUniqueName": "C:\\Projects\\CapacitacionBE\\AppHub\\AppHub.Domain\\AppHub.Domain.csproj",
         "projectName": "AppHub.Domain",
-        "projectPath": "D:\\Proyectos_UAB\\AppHub\\AppHub.Domain\\AppHub.Domain.csproj",
-        "packagesPath": "C:\\Users\\Mario\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos_UAB\\AppHub\\AppHub.Domain\\obj\\",
+        "projectPath": "C:\\Projects\\CapacitacionBE\\AppHub\\AppHub.Domain\\AppHub.Domain.csproj",
+        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\CapacitacionBE\\AppHub\\AppHub.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -89,6 +95,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -101,6 +108,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -122,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

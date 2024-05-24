@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E6D93B5A-1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHub.Domain.Test", "AppHub.Domain.Test\AppHub.Domain.Test.csproj", "{EB435433-6DE8-466C-B574-691BDF33099A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHub.Application.Test", "AppHub.Application.Test\AppHub.Application.Test.csproj", "{5513771B-40B1-4AA0-B800-7D6A493CC0BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +34,13 @@ Global
 		{EB435433-6DE8-466C-B574-691BDF33099A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB435433-6DE8-466C-B574-691BDF33099A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB435433-6DE8-466C-B574-691BDF33099A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5513771B-40B1-4AA0-B800-7D6A493CC0BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5513771B-40B1-4AA0-B800-7D6A493CC0BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5513771B-40B1-4AA0-B800-7D6A493CC0BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5513771B-40B1-4AA0-B800-7D6A493CC0BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EB435433-6DE8-466C-B574-691BDF33099A} = {E6D93B5A-1E4C-4B49-8FF6-91916D966834}
+		{5513771B-40B1-4AA0-B800-7D6A493CC0BE} = {E6D93B5A-1E4C-4B49-8FF6-91916D966834}
 	EndGlobalSection
 EndGlobal
