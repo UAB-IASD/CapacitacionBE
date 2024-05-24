@@ -23,22 +23,6 @@ public class PersonModelTest
     }
 
     [TestMethod]
-    [ExpectedException(typeof(InvalidEmailException))]
-    [DataRow("oscar.quisbert@iatec")]
-    [DataRow("oscar.quisbertiatec.com")]
-    [DataRow("oscar_quisbertiateccom")]
-    public void ValidateEmailExceptionTest(string email)
-    {
-        Guid id = Guid.NewGuid();
-        string name = "Oscar";
-        string lastname = "Quisbert";
-        string phoneNumber = "70=593452";
-        DateTime birthdate = new DateTime(1989, 01, 23);
-
-        PersonModel result = new PersonModel(id, name, lastname, email, phoneNumber, birthdate);
-    }
-
-    [TestMethod]
     [ExpectedException(typeof(InvalidPhoneNumberException))]
     [DataRow("70593452~")]
     [DataRow("+70593452/")]

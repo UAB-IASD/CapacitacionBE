@@ -25,20 +25,13 @@ public class PersonModel
         Id = id;
         Name = name;
         Lastname = lastname;
-        Email = ValidatedEmail(email);
-        PhoneNumber = ValidatePhone(phoneNumber);
+        Email = email;
+        PhoneNumber = ValidatedPhone(phoneNumber);
         Birthdate = ValidateBirthDay(birthdate);
     }
 
-    public void UpdatePhone(string phoneNumber) => PhoneNumber = ValidatePhone(phoneNumber);
-
-    private static string ValidatedEmail(string email)
-    {
-        if(!new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$").Match(email).Success)
-            throw new InvalidEmailException();
-        
-        return email;
-    }
+    public void UpdatePhone(string phoneNumber) => PhoneNumber = ValidatedPhone(phoneNumber);
+    public void SetEmail(string email) => Email = email;
 
     private static DateTime ValidateBirthDay(DateTime birthdate)
     {
@@ -47,7 +40,7 @@ public class PersonModel
         return birthdate;
     }
 
-    private static string ValidatePhone(string phoneNumber)
+    private static string ValidatedPhone(string phoneNumber)
     {
         if (!IsPhoneNumber(phoneNumber))
             throw new InvalidPhoneNumberException();
