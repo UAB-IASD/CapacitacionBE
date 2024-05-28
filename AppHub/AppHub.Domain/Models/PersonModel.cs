@@ -35,7 +35,7 @@ public class PersonModel
 
     private static DateTime ValidateBirthDay(DateTime birthdate)
     {
-        if((DateTime.Now.Year - birthdate.Year) <= 15)
+        if ((DateTime.Now.Year - birthdate.Year) <= 15)
             throw new InvalidBirthdateException();
         return birthdate;
     }
@@ -45,8 +45,8 @@ public class PersonModel
         if (!IsPhoneNumber(phoneNumber))
             throw new InvalidPhoneNumberException();
         return phoneNumber;
-    }  
-    
+    }
+
     private static bool IsPhoneNumber(string number)
     {
         return Regex.Match(number, @"^(\+?\s?[0-9\s?]+)$").Success;

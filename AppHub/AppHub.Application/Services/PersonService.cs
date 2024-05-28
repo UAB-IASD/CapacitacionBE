@@ -9,32 +9,39 @@ namespace AppHub.Application.Services;
 public class PersonService
 {
     private readonly IPersonRepository _personRepository;
-    private readonly IEmailValidatorProvider _emailValidatorProvider;
+    private readonly IFakeEmailValidatorProvider _fakeEmailValidatorProvider;
     private readonly IValidationAdapter _validationAdapter;
 
     public PersonService(
         IPersonRepository personRepository,
-        IEmailValidatorProvider emailValidatorProvider,
+        IFakeEmailValidatorProvider fakeEmailValidatorProvider,
         IValidationAdapter validationAdapter
     )
     {
         _personRepository = personRepository;
-        _emailValidatorProvider = emailValidatorProvider;
+        _fakeEmailValidatorProvider = fakeEmailValidatorProvider;
         _validationAdapter = validationAdapter;
     }
 
     public async Task<PersonModel> Create(PersonModel personModel)
     {
-        personModel.SetEmail(
-            _validationAdapter.ValidatedEmail(personModel.Email)
-        );
+        var validatedEmail = _validationAdapter.ValidatedEmail(personModel.Email);
+        personModel.SetEmail(validatedEmail);
 
-        if (await _personRepository.IsEmailDuplicated(personModel.Email))
+        if (await _personRepository.IsDuplicatedEmail(personModel.Email))
             throw new DuplicatedEmailException();
 
-        if (!await _emailValidatorProvider.IsEmailValid(personModel.Email))
-            throw new InvalidEmailException();
+        if (!await _fakeEmailValidatorProvider.IsNoFakeEmail(personModel.Email))
+            throw new FakeEmailException();
 
-        return await _personRepository.InsertAsync(personModel);
+        return await _personRepository.CreatePersonAsync(personModel);
+    }
+
+    public async Task<AuthenticablePersonModel> CreateAuthenticable(AuthenticablePersonModel personModel)
+    {
+        if (await _personRepository.IsNoUniqueUsername(personModel.Username))
+            throw new NoUniqueUsernameException(personModel.Username);
+
+        return await _personRepository.CreateAuthenticablePersonAsync(personModel);
     }
 }

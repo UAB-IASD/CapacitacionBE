@@ -3,9 +3,9 @@ using AppHub.Domain.Repositories;
 
 namespace AppHub.Application.Test.Mock;
 
-internal class PersonRepository: IPersonRepository
+internal class PersonRepository : IPersonRepository
 {
-    public Task<PersonModel> InsertAsync(PersonModel model)
+    public Task<PersonModel> CreatePersonAsync(PersonModel model)
     {
         return Task.FromResult(model);
     }
@@ -30,8 +30,18 @@ internal class PersonRepository: IPersonRepository
         throw new NotImplementedException();
     }
 
-    public Task<bool> IsEmailDuplicated(string email)
+    public Task<bool> IsDuplicatedEmail(string email)
     {
         return Task.FromResult(false);
+    }
+
+    public Task<bool> IsNoUniqueUsername(string username)
+    {
+        return Task.FromResult(false);
+    }
+
+    public Task<AuthenticablePersonModel> CreateAuthenticablePersonAsync(AuthenticablePersonModel model)
+    {
+        return Task.FromResult(model);
     }
 }

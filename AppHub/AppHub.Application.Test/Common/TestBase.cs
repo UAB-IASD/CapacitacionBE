@@ -16,7 +16,7 @@ public class TestBase
         var registor = new ServiceCollection();
         registor.AddTransient<IValidationAdapter, ValidationAdapter>();
         registor.AddTransient<IPersonRepository, PersonRepository>();
-        registor.AddTransient<IEmailValidatorProvider, EmailValidatorProvider>();
+        registor.AddTransient<IFakeEmailValidatorProvider, FakeEmailValidatorProvider>();
         registor.AddTransient<PersonService>();
         _container = registor.BuildServiceProvider();
     }

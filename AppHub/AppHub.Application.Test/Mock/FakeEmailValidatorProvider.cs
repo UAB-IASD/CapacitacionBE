@@ -2,9 +2,9 @@
 
 namespace AppHub.Application.Test.Mock;
 
-internal class EmailValidatorProvider: IEmailValidatorProvider
+internal class FakeEmailValidatorProvider: IFakeEmailValidatorProvider
 {
-    public Task<bool> IsEmailValid(string email)
+    public Task<bool> IsNoFakeEmail(string email)
     {
         return Task.FromResult(true);
     }

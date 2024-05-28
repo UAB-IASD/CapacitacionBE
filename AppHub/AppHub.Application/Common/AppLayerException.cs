@@ -1,6 +1,6 @@
 ﻿namespace AppHub.Application.Common;
 
-public class AppLayerException: Exception
+public class AppLayerException : Exception
 {
     public AppLayerException(string? message) : base(message)
     {
