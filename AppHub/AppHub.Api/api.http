@@ -1,0 +1,18 @@
+
+### GET request to example server
+GET http://localhost:5239/weatherforecast/GetWeatherForecast
+
+###
+
+### GET request to example server
+POST http://localhost:5239/person/create
+
+{
+    "Id": "{{$guid}}",
+    "Name": "Oscar",
+    "Lastname": "Quisbert",
+    "Email": "oscar.quisbert@iatec.com",
+    "PhoneNumber": "70593452",
+    "Birthdate": "1989-06-02T19:10:40.7681438-04:00"
+}
+###
