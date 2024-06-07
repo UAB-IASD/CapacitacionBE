@@ -43,6 +43,8 @@ app.MapGet("/weatherforecast/GetWeatherForecast", () =>
 );
 
 app.MapPost("/person/create", (PersonModel model, PersonService personService) => personService.Create(model));
+app.MapPost("/auth-person/create", (AuthenticablePersonModel model, PersonService personService) => personService.CreateAuthenticable(model));
+app.MapGet("/auth-person/get-by-id/{identity}", (Guid identity, PersonService personService) => personService.GetAuthPersonByIdAsync(identity));
 
 app.Run();
 

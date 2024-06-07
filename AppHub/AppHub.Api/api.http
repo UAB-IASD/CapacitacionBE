@@ -4,11 +4,12 @@ GET http://localhost:5239/weatherforecast/GetWeatherForecast
 
 ###
 
-### GET request to example server
+### POST Create person
 POST http://localhost:5239/person/create
+Content-Type: application/json
 
 {
-    "Id": "{{$guid}}",
+    "Id": "{{$random.uuid}}",
     "Name": "Oscar",
     "Lastname": "Quisbert",
     "Email": "oscar.quisbert@iatec.com",
@@ -16,3 +17,22 @@ POST http://localhost:5239/person/create
     "Birthdate": "1989-06-02T19:10:40.7681438-04:00"
 }
 ###
+
+### POST Create auth person
+POST http://localhost:5239/auth-person/create
+Content-Type: application/json
+
+{
+    "Id": "{{$random.uuid}}",
+    "Name": "Oscar",
+    "Lastname": "Quisbert",
+    "Email": "oscar.quisbert@iatec.com",
+    "PhoneNumber": "70593452",
+    "Birthdate": "1989-06-02T19:10:40.7681438-04:00",
+    "Username": "oscar.quisbert",
+    "Password": "secretPassword123%@"
+}
+###
+
+###
+GET http://localhost:5239/auth-person/get-by-id/2a2b644b-5bae-4bba-b366-a6dfa8e3b4da
