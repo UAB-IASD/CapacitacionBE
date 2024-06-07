@@ -6,6 +6,7 @@ using AppHub.Infrastructure.Database.EntityFramework;
 using AppHub.Infrastructure.Database.EntityFramework.Repositories;
 using AppHub.Infrastructure.Providers.Validators;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AppHub.Infrastructure.Ioc.di;
@@ -27,10 +28,11 @@ public static class DependencyInjectionProject
 
     public static IServiceCollection RegisterRepositories(this IServiceCollection collection)
     {
-        collection.AddDbContext<AppDbContext>(options =>
-        {
-            options.UseSqlServer("Server=WIN-G65J2K7O2OG\\SQLEXPRESS;Database=HubUab;User Id=soporte;Password=soporte;");
-        });
+        var config = collection.BuildServiceProvider().GetService<IConfiguration>();
+        // var connectionString = config?.GetSection("DataBase:Default").Value ?? "";
+        var connectionString = config?.GetSection("DataBase:Express").Value ?? "";
+
+        collection.AddDbContext<AppHubDbContext>(options => options.UseSqlServer(connectionString));
         collection.AddTransient<IPersonRepository, PersonRepository>();
         return collection;
     }

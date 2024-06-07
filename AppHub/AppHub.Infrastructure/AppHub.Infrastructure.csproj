@@ -8,11 +8,10 @@
 
     <ItemGroup>
       <ProjectReference Include="..\AppHub.Application\AppHub.Application.csproj" />
+      <ProjectReference Include="..\AppHub.Infrastructure.Database.EntityFramework\AppHub.Infrastructure.Database.EntityFramework.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.31" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.31" />
       <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
       <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
