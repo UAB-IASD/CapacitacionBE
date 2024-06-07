@@ -44,4 +44,9 @@ public class PersonService
 
         return await _personRepository.CreateAuthenticablePersonAsync(personModel);
     }
+
+    public Task<AuthenticablePersonModel> GetAuthPersonByIdAsync(Guid identity)
+    {
+        return _personRepository.GetAuthPersonByIdAsync(identity);
+    }
 }

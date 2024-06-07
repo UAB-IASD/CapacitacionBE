@@ -44,4 +44,9 @@ internal class PersonRepository : IPersonRepository
     {
         return Task.FromResult(model);
     }
+
+    public Task<AuthenticablePersonModel> GetAuthPersonByIdAsync(Guid identity)
+    {
+        throw new NotImplementedException();
+    }
 }
