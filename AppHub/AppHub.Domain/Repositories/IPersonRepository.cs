@@ -13,4 +13,5 @@ public interface IPersonRepository : IRepository
     Task<bool> IsDuplicatedEmail(string email);
     Task<bool> IsNoUniqueUsername(string username);
     Task<AuthenticablePersonModel> CreateAuthenticablePersonAsync(AuthenticablePersonModel model);
+    Task<AuthenticablePersonModel> GetAuthPersonByIdAsync(Guid identity);
 }

@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using AppHub.Domain.Exceptions;
 
@@ -8,6 +9,7 @@ public class AuthenticablePersonModel : PersonModel
     public string Username { get; private set; }
     public string Password { get; private set; }
 
+    [JsonConstructor]
     public AuthenticablePersonModel(
         Guid id,
         string name,
